@@ -1,0 +1,8 @@
+.idea
+.editorconfig
+.gitignore
+.github
+
+package-lock.json
+!tests/package-lock.json
+tests

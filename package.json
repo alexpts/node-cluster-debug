@@ -1,0 +1,27 @@
+{
+  "name": "cluster-debug",
+  "version": "1.0.0",
+  "description": "Cluster worker process reuses debug port after recreate",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "cd tests && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpts/node-cluster-debug.git"
+  },
+  "keywords": [
+    "cluster",
+    "debug",
+    "debuggr"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexpts/node-cluster-debug/issues"
+  },
+  "homepage": "https://github.com/alexpts/node-cluster-debug#readme"
+}

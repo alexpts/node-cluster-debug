@@ -1,0 +1,6 @@
+# https://mochajs.org/#configuring-mocha-nodejs
+bail: false
+exit: true
+colors: true
+fullTrace: true
+recursive: true

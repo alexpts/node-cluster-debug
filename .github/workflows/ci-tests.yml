@@ -1,0 +1,30 @@
+# https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+
+name: Node.js CI tests
+
+on:
+  pull_request: {}
+  release: {}
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: unit tests -> node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node: [ '10', '12', '14', '16' ]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: cd tests && npm install
+      - run: npm test
