@@ -1,5 +1,7 @@
 # Cluster-debug
 
+![unit tests](https://github.com/alexpts/node-cluster-debug/actions/workflows/ci-tests.yml/badge.svg)
+
 Wrapper for native cluster module
 
 Apply strategy with minimal next port for worker debug port.
